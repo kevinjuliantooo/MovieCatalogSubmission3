@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Film Favorit</string>
+
+    <string name="tab_movies">Film</string>
+    <string name="tab_tvCatalog">Acara TV</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="change_language_setting">Pengaturan</string>
+
+    <string name="content_title">Katalog Film</string>
+    <string name="content_text">Katalog Film Kangen Kamu</string>
+    <string name="subtext">Pengingat Harian</string>
+    <string name="search_hint">Apa yang ingin kamu cari?</string>
+    <string name="appwidget_text">CONTOH</string>
+    <string name="add_widget">TAMBAH WIDGET</string>
+    <string name="empty_text">TIDAK ADA DATA</string>
+
+</resources>

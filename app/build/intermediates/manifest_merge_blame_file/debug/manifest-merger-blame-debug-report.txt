@@ -1,0 +1,159 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.moviecatalogsubmission3"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\Users\62813\Downloads\LatihanSubmission3\MovieCatalogSubmission4EHE\MovieCatalogSubmission3\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->C:\Users\62813\Downloads\LatihanSubmission3\MovieCatalogSubmission4EHE\MovieCatalogSubmission3\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\62813\Downloads\LatihanSubmission3\MovieCatalogSubmission4EHE\MovieCatalogSubmission3\app\src\main\AndroidManifest.xml:5:5-67
+11-->C:\Users\62813\Downloads\LatihanSubmission3\MovieCatalogSubmission4EHE\MovieCatalogSubmission3\app\src\main\AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.WAKE_LOCK" />
+12-->C:\Users\62813\Downloads\LatihanSubmission3\MovieCatalogSubmission4EHE\MovieCatalogSubmission3\app\src\main\AndroidManifest.xml:6:5-68
+12-->C:\Users\62813\Downloads\LatihanSubmission3\MovieCatalogSubmission4EHE\MovieCatalogSubmission3\app\src\main\AndroidManifest.xml:6:22-65
+13    <uses-permission android:name="android.permission.VIBRATE" />
+13-->C:\Users\62813\Downloads\LatihanSubmission3\MovieCatalogSubmission4EHE\MovieCatalogSubmission3\app\src\main\AndroidManifest.xml:7:5-66
+13-->C:\Users\62813\Downloads\LatihanSubmission3\MovieCatalogSubmission4EHE\MovieCatalogSubmission3\app\src\main\AndroidManifest.xml:7:22-63
+14    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+14-->C:\Users\62813\Downloads\LatihanSubmission3\MovieCatalogSubmission4EHE\MovieCatalogSubmission3\app\src\main\AndroidManifest.xml:8:5-81
+14-->C:\Users\62813\Downloads\LatihanSubmission3\MovieCatalogSubmission4EHE\MovieCatalogSubmission3\app\src\main\AndroidManifest.xml:8:22-78
+15    <uses-permission android:name="android.permission.READ_USER_DICTIONARY" />
+15-->C:\Users\62813\Downloads\LatihanSubmission3\MovieCatalogSubmission4EHE\MovieCatalogSubmission3\app\src\main\AndroidManifest.xml:9:5-79
+15-->C:\Users\62813\Downloads\LatihanSubmission3\MovieCatalogSubmission4EHE\MovieCatalogSubmission3\app\src\main\AndroidManifest.xml:9:22-76
+16    <uses-permission android:name="android.permission.WRITE_USER_DICTIONARY" />
+16-->C:\Users\62813\Downloads\LatihanSubmission3\MovieCatalogSubmission4EHE\MovieCatalogSubmission3\app\src\main\AndroidManifest.xml:10:5-80
+16-->C:\Users\62813\Downloads\LatihanSubmission3\MovieCatalogSubmission4EHE\MovieCatalogSubmission3\app\src\main\AndroidManifest.xml:10:22-77
+17
+18    <permission
+18-->C:\Users\62813\Downloads\LatihanSubmission3\MovieCatalogSubmission4EHE\MovieCatalogSubmission3\app\src\main\AndroidManifest.xml:12:5-14:44
+19        android:name="com.example.moviecatalogsubmission3.READ_DATABASE"
+19-->C:\Users\62813\Downloads\LatihanSubmission3\MovieCatalogSubmission4EHE\MovieCatalogSubmission3\app\src\main\AndroidManifest.xml:13:9-73
+20        android:protectionLevel="normal" />
+20-->C:\Users\62813\Downloads\LatihanSubmission3\MovieCatalogSubmission4EHE\MovieCatalogSubmission3\app\src\main\AndroidManifest.xml:14:9-41
+21    <permission
+21-->C:\Users\62813\Downloads\LatihanSubmission3\MovieCatalogSubmission4EHE\MovieCatalogSubmission3\app\src\main\AndroidManifest.xml:15:5-17:44
+22        android:name="com.example.moviecatalogsubmission3.WRITE_DATABASE"
+22-->C:\Users\62813\Downloads\LatihanSubmission3\MovieCatalogSubmission4EHE\MovieCatalogSubmission3\app\src\main\AndroidManifest.xml:16:9-74
+23        android:protectionLevel="normal" />
+23-->C:\Users\62813\Downloads\LatihanSubmission3\MovieCatalogSubmission4EHE\MovieCatalogSubmission3\app\src\main\AndroidManifest.xml:17:9-41
+24
+25    <application
+25-->C:\Users\62813\Downloads\LatihanSubmission3\MovieCatalogSubmission4EHE\MovieCatalogSubmission3\app\src\main\AndroidManifest.xml:19:5-67:19
+26        android:allowBackup="true"
+26-->C:\Users\62813\Downloads\LatihanSubmission3\MovieCatalogSubmission4EHE\MovieCatalogSubmission3\app\src\main\AndroidManifest.xml:20:9-35
+27        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+27-->[androidx.core:core:1.0.1] C:\Users\62813\.gradle\caches\transforms-2\files-2.1\e6403649940cf83439c3c303fa89effb\core-1.0.1\AndroidManifest.xml:22:18-86
+28        android:debuggable="true"
+29        android:icon="@mipmap/ic_launcher"
+29-->C:\Users\62813\Downloads\LatihanSubmission3\MovieCatalogSubmission4EHE\MovieCatalogSubmission3\app\src\main\AndroidManifest.xml:21:9-43
+30        android:label="@string/app_name"
+30-->C:\Users\62813\Downloads\LatihanSubmission3\MovieCatalogSubmission4EHE\MovieCatalogSubmission3\app\src\main\AndroidManifest.xml:22:9-41
+31        android:roundIcon="@mipmap/ic_launcher_round"
+31-->C:\Users\62813\Downloads\LatihanSubmission3\MovieCatalogSubmission4EHE\MovieCatalogSubmission3\app\src\main\AndroidManifest.xml:23:9-54
+32        android:supportsRtl="true"
+32-->C:\Users\62813\Downloads\LatihanSubmission3\MovieCatalogSubmission4EHE\MovieCatalogSubmission3\app\src\main\AndroidManifest.xml:24:9-35
+33        android:testOnly="true"
+34        android:theme="@style/AppTheme" >
+34-->C:\Users\62813\Downloads\LatihanSubmission3\MovieCatalogSubmission4EHE\MovieCatalogSubmission3\app\src\main\AndroidManifest.xml:25:9-40
+35        <provider
+35-->C:\Users\62813\Downloads\LatihanSubmission3\MovieCatalogSubmission4EHE\MovieCatalogSubmission3\app\src\main\AndroidManifest.xml:27:9-33:15
+36            android:name="com.example.moviecatalogsubmission3.FavoriteProvider"
+36-->C:\Users\62813\Downloads\LatihanSubmission3\MovieCatalogSubmission4EHE\MovieCatalogSubmission3\app\src\main\AndroidManifest.xml:28:13-45
+37            android:authorities="com.example.moviecatalogsubmission3"
+37-->C:\Users\62813\Downloads\LatihanSubmission3\MovieCatalogSubmission4EHE\MovieCatalogSubmission3\app\src\main\AndroidManifest.xml:29:13-70
+38            android:exported="true"
+38-->C:\Users\62813\Downloads\LatihanSubmission3\MovieCatalogSubmission4EHE\MovieCatalogSubmission3\app\src\main\AndroidManifest.xml:30:13-36
+39            android:readPermission="com.example.moviecatalogsubmission3.READ_DATABASE"
+39-->C:\Users\62813\Downloads\LatihanSubmission3\MovieCatalogSubmission4EHE\MovieCatalogSubmission3\app\src\main\AndroidManifest.xml:31:13-87
+40            android:writePermission="com.example.moviecatalogsubmission3.WRITE_DATABASE" />
+40-->C:\Users\62813\Downloads\LatihanSubmission3\MovieCatalogSubmission4EHE\MovieCatalogSubmission3\app\src\main\AndroidManifest.xml:32:13-89
+41
+42        <receiver android:name="com.example.moviecatalogsubmission3.ImageBannerWidget" >
+42-->C:\Users\62813\Downloads\LatihanSubmission3\MovieCatalogSubmission4EHE\MovieCatalogSubmission3\app\src\main\AndroidManifest.xml:35:9-43:20
+42-->C:\Users\62813\Downloads\LatihanSubmission3\MovieCatalogSubmission4EHE\MovieCatalogSubmission3\app\src\main\AndroidManifest.xml:35:19-52
+43            <intent-filter>
+43-->C:\Users\62813\Downloads\LatihanSubmission3\MovieCatalogSubmission4EHE\MovieCatalogSubmission3\app\src\main\AndroidManifest.xml:36:13-38:29
+44                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+44-->C:\Users\62813\Downloads\LatihanSubmission3\MovieCatalogSubmission4EHE\MovieCatalogSubmission3\app\src\main\AndroidManifest.xml:37:17-84
+44-->C:\Users\62813\Downloads\LatihanSubmission3\MovieCatalogSubmission4EHE\MovieCatalogSubmission3\app\src\main\AndroidManifest.xml:37:25-81
+45            </intent-filter>
+46
+47            <meta-data
+47-->C:\Users\62813\Downloads\LatihanSubmission3\MovieCatalogSubmission4EHE\MovieCatalogSubmission3\app\src\main\AndroidManifest.xml:40:13-42:68
+48                android:name="android.appwidget.provider"
+48-->C:\Users\62813\Downloads\LatihanSubmission3\MovieCatalogSubmission4EHE\MovieCatalogSubmission3\app\src\main\AndroidManifest.xml:41:17-58
+49                android:resource="@xml/image_banner_widget_info" />
+49-->C:\Users\62813\Downloads\LatihanSubmission3\MovieCatalogSubmission4EHE\MovieCatalogSubmission3\app\src\main\AndroidManifest.xml:42:17-65
+50        </receiver>
+51
+52        <activity android:name="com.example.moviecatalogsubmission3.ReminderSettingActivity" />
+52-->C:\Users\62813\Downloads\LatihanSubmission3\MovieCatalogSubmission4EHE\MovieCatalogSubmission3\app\src\main\AndroidManifest.xml:45:9-61
+52-->C:\Users\62813\Downloads\LatihanSubmission3\MovieCatalogSubmission4EHE\MovieCatalogSubmission3\app\src\main\AndroidManifest.xml:45:19-58
+53        <activity android:name="com.example.moviecatalogsubmission3.DetailActivity" />
+53-->C:\Users\62813\Downloads\LatihanSubmission3\MovieCatalogSubmission4EHE\MovieCatalogSubmission3\app\src\main\AndroidManifest.xml:46:9-52
+53-->C:\Users\62813\Downloads\LatihanSubmission3\MovieCatalogSubmission4EHE\MovieCatalogSubmission3\app\src\main\AndroidManifest.xml:46:19-49
+54        <activity android:name="com.example.moviecatalogsubmission3.MainActivity" >
+54-->C:\Users\62813\Downloads\LatihanSubmission3\MovieCatalogSubmission4EHE\MovieCatalogSubmission3\app\src\main\AndroidManifest.xml:47:9-53:20
+54-->C:\Users\62813\Downloads\LatihanSubmission3\MovieCatalogSubmission4EHE\MovieCatalogSubmission3\app\src\main\AndroidManifest.xml:47:19-47
+55            <intent-filter>
+55-->C:\Users\62813\Downloads\LatihanSubmission3\MovieCatalogSubmission4EHE\MovieCatalogSubmission3\app\src\main\AndroidManifest.xml:48:13-52:29
+56                <action android:name="android.intent.action.MAIN" />
+56-->C:\Users\62813\Downloads\LatihanSubmission3\MovieCatalogSubmission4EHE\MovieCatalogSubmission3\app\src\main\AndroidManifest.xml:49:17-69
+56-->C:\Users\62813\Downloads\LatihanSubmission3\MovieCatalogSubmission4EHE\MovieCatalogSubmission3\app\src\main\AndroidManifest.xml:49:25-66
+57
+58                <category android:name="android.intent.category.LAUNCHER" />
+58-->C:\Users\62813\Downloads\LatihanSubmission3\MovieCatalogSubmission4EHE\MovieCatalogSubmission3\app\src\main\AndroidManifest.xml:51:17-77
+58-->C:\Users\62813\Downloads\LatihanSubmission3\MovieCatalogSubmission4EHE\MovieCatalogSubmission3\app\src\main\AndroidManifest.xml:51:27-74
+59            </intent-filter>
+60        </activity>
+61
+62        <receiver
+62-->C:\Users\62813\Downloads\LatihanSubmission3\MovieCatalogSubmission4EHE\MovieCatalogSubmission3\app\src\main\AndroidManifest.xml:55:9-58:39
+63            android:name="com.example.moviecatalogsubmission3.AlarmReceiverDaily"
+63-->C:\Users\62813\Downloads\LatihanSubmission3\MovieCatalogSubmission4EHE\MovieCatalogSubmission3\app\src\main\AndroidManifest.xml:56:13-47
+64            android:enabled="true"
+64-->C:\Users\62813\Downloads\LatihanSubmission3\MovieCatalogSubmission4EHE\MovieCatalogSubmission3\app\src\main\AndroidManifest.xml:57:13-35
+65            android:exported="true" />
+65-->C:\Users\62813\Downloads\LatihanSubmission3\MovieCatalogSubmission4EHE\MovieCatalogSubmission3\app\src\main\AndroidManifest.xml:58:13-36
+66        <receiver
+66-->C:\Users\62813\Downloads\LatihanSubmission3\MovieCatalogSubmission4EHE\MovieCatalogSubmission3\app\src\main\AndroidManifest.xml:59:9-62:39
+67            android:name="com.example.moviecatalogsubmission3.AlarmReceiverRelease"
+67-->C:\Users\62813\Downloads\LatihanSubmission3\MovieCatalogSubmission4EHE\MovieCatalogSubmission3\app\src\main\AndroidManifest.xml:60:13-49
+68            android:enabled="true"
+68-->C:\Users\62813\Downloads\LatihanSubmission3\MovieCatalogSubmission4EHE\MovieCatalogSubmission3\app\src\main\AndroidManifest.xml:61:13-35
+69            android:exported="true" />
+69-->C:\Users\62813\Downloads\LatihanSubmission3\MovieCatalogSubmission4EHE\MovieCatalogSubmission3\app\src\main\AndroidManifest.xml:62:13-36
+70
+71        <service
+71-->C:\Users\62813\Downloads\LatihanSubmission3\MovieCatalogSubmission4EHE\MovieCatalogSubmission3\app\src\main\AndroidManifest.xml:64:9-66:72
+72            android:name="com.example.moviecatalogsubmission3.StackWidgetService"
+72-->C:\Users\62813\Downloads\LatihanSubmission3\MovieCatalogSubmission4EHE\MovieCatalogSubmission3\app\src\main\AndroidManifest.xml:65:13-47
+73            android:permission="android.permission.BIND_REMOTEVIEWS" />
+73-->C:\Users\62813\Downloads\LatihanSubmission3\MovieCatalogSubmission4EHE\MovieCatalogSubmission3\app\src\main\AndroidManifest.xml:66:13-69
+74
+75        <provider
+75-->[com.squareup.picasso:picasso:2.71828] C:\Users\62813\.gradle\caches\transforms-2\files-2.1\3280463a579c9d09b5b95c37d8cbc29f\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+76            android:name="com.squareup.picasso.PicassoProvider"
+76-->[com.squareup.picasso:picasso:2.71828] C:\Users\62813\.gradle\caches\transforms-2\files-2.1\3280463a579c9d09b5b95c37d8cbc29f\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+77            android:authorities="com.example.moviecatalogsubmission3.com.squareup.picasso"
+77-->[com.squareup.picasso:picasso:2.71828] C:\Users\62813\.gradle\caches\transforms-2\files-2.1\3280463a579c9d09b5b95c37d8cbc29f\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+78            android:exported="false" />
+78-->[com.squareup.picasso:picasso:2.71828] C:\Users\62813\.gradle\caches\transforms-2\files-2.1\3280463a579c9d09b5b95c37d8cbc29f\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+79        <provider
+79-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\62813\.gradle\caches\transforms-2\files-2.1\7cf172fcb08d400d00aceabef0f64727\lifecycle-process-2.0.0\AndroidManifest.xml:23:9-27:43
+80            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+80-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\62813\.gradle\caches\transforms-2\files-2.1\7cf172fcb08d400d00aceabef0f64727\lifecycle-process-2.0.0\AndroidManifest.xml:24:13-79
+81            android:authorities="com.example.moviecatalogsubmission3.lifecycle-process"
+81-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\62813\.gradle\caches\transforms-2\files-2.1\7cf172fcb08d400d00aceabef0f64727\lifecycle-process-2.0.0\AndroidManifest.xml:25:13-69
+82            android:exported="false"
+82-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\62813\.gradle\caches\transforms-2\files-2.1\7cf172fcb08d400d00aceabef0f64727\lifecycle-process-2.0.0\AndroidManifest.xml:26:13-37
+83            android:multiprocess="true" />
+83-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\62813\.gradle\caches\transforms-2\files-2.1\7cf172fcb08d400d00aceabef0f64727\lifecycle-process-2.0.0\AndroidManifest.xml:27:13-40
+84    </application>
+85
+86</manifest>

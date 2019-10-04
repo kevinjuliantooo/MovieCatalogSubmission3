@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Movie Catalog</string>
+
+    <string name="tab_movies">MOVIES</string>
+    <string name="tab_tvCatalog">TV SHOWS</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="change_language_setting">Setting</string>
+
+    <string name="content_title">Catalouge Movie</string>
+    <string name="content_text">Catalouge Movie is Missing You</string>
+    <string name="subtext">Daily Reminder</string>
+    <string name="search_hint">what are you looking?</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="empty_text">NO DATA</string>
+
+</resources>
