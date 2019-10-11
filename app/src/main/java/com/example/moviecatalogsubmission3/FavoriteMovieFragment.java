@@ -64,10 +64,15 @@ public class FavoriteMovieFragment extends Fragment {
         current_language = String.valueOf(getResources().getConfiguration().locale);
 
 
+        favoriteHelper = FavoriteHelper.getInstance(getContext());
+        favoriteHelper.open();
 
-        Cursor cursor = getActivity().getApplicationContext().getContentResolver().query(DatabaseFavoriteContract.NoteColumns.CONTENT_URI,
+        Cursor cursor = getContext().getContentResolver().query(DatabaseFavoriteContract.NoteColumns.CONTENT_URI,
                 null, null, null, null);
-        cursor.close();
+
+//        Cursor cursor = getContentResolver().query(DatabaseFavoriteContract.NoteColumns.CONTENT_URI,
+//                null, null, null, null);
+
 
 
         filmIds = new HashSet<>();
@@ -78,6 +83,8 @@ public class FavoriteMovieFragment extends Fragment {
         }
 
         cursor.close();
+
+
 
 
 

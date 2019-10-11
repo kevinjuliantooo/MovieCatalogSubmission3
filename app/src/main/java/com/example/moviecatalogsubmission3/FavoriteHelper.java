@@ -48,7 +48,7 @@ public class FavoriteHelper {
                 null,
                 null,
                 null,
-                _ID + " DESC");
+                _ID + " ASC");
     }
 
     public Cursor queryById(String id) {

@@ -31,9 +31,12 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
+import java.util.Objects;
 import java.util.Random;
 
 import cz.msebera.android.httpclient.Header;
+
+import static android.content.Context.ALARM_SERVICE;
 
 public class AlarmReceiverRelease extends BroadcastReceiver {
 
@@ -109,7 +112,7 @@ public class AlarmReceiverRelease extends BroadcastReceiver {
     public void setOneTimeAlarm(Context context, String type, String time) {
         if (isDateInvalid(time, TIME_FORMAT)) return;
 
-        AlarmManager alarmManager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
+        AlarmManager alarmManager = (AlarmManager) context.getSystemService(ALARM_SERVICE);
         Intent intent = new Intent(context, AlarmReceiverRelease.class);
         intent.putExtra(EXTRA_TYPE, type);
         Log.e("ONE TIME", time);
@@ -171,7 +174,7 @@ public class AlarmReceiverRelease extends BroadcastReceiver {
 
     public void setRepeatingAlarm(Context context, String type, String time) {
         if (isDateInvalid(time, TIME_FORMAT)) return;
-        AlarmManager alarmManager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
+        AlarmManager alarmManager = (AlarmManager) context.getSystemService(ALARM_SERVICE);
         Intent intent = new Intent(context, AlarmReceiverRelease.class);
         intent.putExtra(EXTRA_TYPE, type);
 //        intent.putExtra(EXTRA_TITLE, title);
@@ -190,5 +193,13 @@ public class AlarmReceiverRelease extends BroadcastReceiver {
         }
         Toast.makeText(context, "Repeating alarm set up", Toast.LENGTH_SHORT).show();
     }
+
+    public void setCancelAlarm(Context context) {
+        Intent intent = new Intent(context, AlarmReceiverRelease.class);
+        PendingIntent pendingIntent = PendingIntent.getBroadcast(context, 1253, intent, 0);
+        AlarmManager alarmManager = (AlarmManager) context.getSystemService(ALARM_SERVICE);
+        alarmManager.cancel(pendingIntent);
+    }
+
 
 }

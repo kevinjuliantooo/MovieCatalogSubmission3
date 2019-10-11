@@ -91,6 +91,7 @@ public class DetailActivity extends AppCompatActivity {
         Cursor cursor = getContentResolver().query(DatabaseFavoriteContract.NoteColumns.CONTENT_URI,
                 null, null, null, null);
 
+
         System.out.println(cursor);
 
         Set<String> filmIds = new HashSet<>();
@@ -99,6 +100,7 @@ public class DetailActivity extends AppCompatActivity {
                     cursor.getColumnIndexOrThrow(FAVORITE_ID)));
             filmIds.add(filmId);
         }
+        cursor.close();
 
 
 
@@ -143,6 +145,8 @@ public class DetailActivity extends AppCompatActivity {
                 filmIds.add(filmId);
             }
 
+            cursor.close();
+
 
             System.out.println(filmIds);
             editor.putStringSet("favoriteList", filmIds);
@@ -175,7 +179,6 @@ public class DetailActivity extends AppCompatActivity {
 //            Cursor cursor = favoriteHelper.queryAll();
             Cursor cursor = getContentResolver().query(DatabaseFavoriteContract.NoteColumns.CONTENT_URI,
                     null, null, null, null);
-
 
             Set<String> filmIds = new HashSet<>();
             while(cursor.moveToNext()) {

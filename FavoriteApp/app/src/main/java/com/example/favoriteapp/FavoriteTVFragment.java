@@ -72,6 +72,8 @@ public class FavoriteTVFragment extends Fragment {
             filmIds.add(filmId);
         }
 
+        cursor.close();
+
         if (current_language.equals("in_ID")){
             current_language = "id";
         }

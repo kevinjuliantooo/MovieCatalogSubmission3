@@ -167,10 +167,6 @@ public class MainActivity extends AppCompatActivity {
             tabPosition = savedInstanceState.getInt("tabPosition");
         }
 
-
-        alarmReceiverDaily = new AlarmReceiverDaily();
-        alarmReceiverRelease = new AlarmReceiverRelease();
-
         System.out.println("Ini" + sharedPreferences.getStringSet("newFilm", new HashSet<String>()));
 
         boolean release_status = sharedPreferences.getBoolean("release_status", false);
@@ -178,10 +174,10 @@ public class MainActivity extends AppCompatActivity {
 
         list = new ArrayList<>();
 
-        if (release_status){
-            System.out.println("Release Notification Active");
-            alarmReceiverRelease.setRepeatingAlarm(this, AlarmReceiverDaily.TYPE_REPEATING,
-                    "8:00");
+//        if (release_status){
+//            System.out.println("Release Notification Active");
+//            alarmReceiverRelease.setRepeatingAlarm(this, AlarmReceiverDaily.TYPE_REPEATING,
+//                    "8:00");
 
 //            AsyncHttpClient client = new AsyncHttpClient();
 //
@@ -252,13 +248,13 @@ public class MainActivity extends AppCompatActivity {
 //
 //
 
-        }
-
-        if (daily_status) {
-            System.out.println("Daily Notification Active");
-            alarmReceiverDaily.setRepeatingAlarm(this, AlarmReceiverDaily.TYPE_REPEATING,
-                    "7:00");
-        }
+//        }
+//
+//        if (daily_status) {
+//            System.out.println("Daily Notification Active");
+//            alarmReceiverDaily.setRepeatingAlarm(this, AlarmReceiverDaily.TYPE_REPEATING,
+//                    "7:00");
+//        }
 
 
     }

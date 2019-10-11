@@ -38,6 +38,7 @@ public class FavoriteTVFragment extends Fragment {
     private ProgressBar progressBar;
     private String current_language;
     private Set<String> filmIds;
+    private FavoriteHelper favoriteHelper;
 
 
     public FavoriteTVFragment() {
@@ -60,6 +61,9 @@ public class FavoriteTVFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         current_language = String.valueOf(getResources().getConfiguration().locale);
+
+        favoriteHelper = FavoriteHelper.getInstance(getContext());
+        favoriteHelper.open();
 
         Cursor cursor = getContext().getContentResolver().query(DatabaseFavoriteContract.NoteColumns.CONTENT_URI,
                 null, null, null, null);

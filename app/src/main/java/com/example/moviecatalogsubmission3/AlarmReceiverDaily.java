@@ -25,6 +25,8 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Locale;
 
+import static android.content.Context.ALARM_SERVICE;
+
 public class AlarmReceiverDaily extends BroadcastReceiver {
 
     public static final String TYPE_ONE_TIME = "OneTimeAlarm";
@@ -134,6 +136,13 @@ public class AlarmReceiverDaily extends BroadcastReceiver {
             alarmManager.setInexactRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), AlarmManager.INTERVAL_DAY, pendingIntent);
         }
         Toast.makeText(context, "Repeating alarm set up", Toast.LENGTH_SHORT).show();
+    }
+
+    public void setCancelAlarm(Context context) {
+        Intent intent = new Intent(context, AlarmReceiverRelease.class);
+        PendingIntent pendingIntent = PendingIntent.getBroadcast(context, 1253, intent, 0);
+        AlarmManager alarmManager = (AlarmManager) context.getSystemService(ALARM_SERVICE);
+        alarmManager.cancel(pendingIntent);
     }
 
 }
