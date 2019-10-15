@@ -22,6 +22,8 @@ import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+//import static com.example.favoriteapp.FavoriteHelper;
+
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
@@ -58,6 +60,9 @@ public class FavoriteMovieFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+//        favoriteHelper = FavoriteHelper.getInstance(getContext());
+//        favoriteHelper.open();
 
         current_language = String.valueOf(getResources().getConfiguration().locale);
 

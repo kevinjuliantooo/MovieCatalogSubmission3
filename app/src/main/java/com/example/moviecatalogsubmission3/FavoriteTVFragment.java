@@ -77,6 +77,7 @@ public class FavoriteTVFragment extends Fragment {
         }
 
         cursor.close();
+        favoriteHelper.close();
 
         if (current_language.equals("in_ID")){
             current_language = "id";

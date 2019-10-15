@@ -83,6 +83,7 @@ public class FavoriteMovieFragment extends Fragment {
         }
 
         cursor.close();
+        favoriteHelper.close();
 
 
 

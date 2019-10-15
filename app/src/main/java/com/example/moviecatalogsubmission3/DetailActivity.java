@@ -64,7 +64,7 @@ public class DetailActivity extends AppCompatActivity {
 
 
         favoriteHelper = FavoriteHelper.getInstance(getApplicationContext());
-        favoriteHelper.open();
+
 
         sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this.getApplicationContext());
         editor = sharedPreferences.edit();
@@ -88,6 +88,8 @@ public class DetailActivity extends AppCompatActivity {
 
 //        Cursor cursor = favoriteHelper.queryAll();
 
+        favoriteHelper.open();
+
         Cursor cursor = getContentResolver().query(DatabaseFavoriteContract.NoteColumns.CONTENT_URI,
                 null, null, null, null);
 
@@ -101,6 +103,7 @@ public class DetailActivity extends AppCompatActivity {
             filmIds.add(filmId);
         }
         cursor.close();
+        favoriteHelper.close();
 
 
 
@@ -131,6 +134,8 @@ public class DetailActivity extends AppCompatActivity {
 //            db.insert(TABLE_NAME, null, values);
 //            getContentResolver().insert(DatabaseContract.NoteColumns.CONTENT_URI, values);
 
+            favoriteHelper.open();
+
             values.put(FAVORITE_ID, String.valueOf(film_id));
             favoriteHelper.insert(values);
 
@@ -146,6 +151,7 @@ public class DetailActivity extends AppCompatActivity {
             }
 
             cursor.close();
+            favoriteHelper.close();
 
 
             System.out.println(filmIds);
@@ -168,6 +174,8 @@ public class DetailActivity extends AppCompatActivity {
 //            Set<String> set = sharedPreferences.getStringSet(KEY, new HashSet<String>());
 //            set.remove(String.valueOf(film_id));
 
+            favoriteHelper.open();
+
             // Define 'where' part of query.
             String selection = FAVORITE_ID + " LIKE ?";
             // Specify arguments in placeholder order.
@@ -188,6 +196,7 @@ public class DetailActivity extends AppCompatActivity {
             }
 
             cursor.close();
+            favoriteHelper.close();
 
             System.out.println(filmIds);
             editor.putStringSet("favoriteList", filmIds);

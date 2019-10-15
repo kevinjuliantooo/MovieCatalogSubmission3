@@ -45,12 +45,13 @@ public class ReminderSettingActivity extends AppCompatActivity {
                     editor.putBoolean("release_status", true);
                     editor.apply();
                     System.out.println("Release Status: On");
-//                    checkReleaseStatus(release_status);
+                    alarmReceiverRelease.setRepeatingAlarm(getApplication().getApplicationContext(), AlarmReceiverDaily.TYPE_REPEATING,
+                            "8:00");
                 } else {
                     editor.putBoolean("release_status", false);
                     editor.apply();
                     System.out.println("Release Status: Off");
-//                    checkReleaseStatus(release_status);
+                    alarmReceiverRelease.setCancelAlarm(getApplication().getApplicationContext());
                 }
             }
         });
@@ -62,12 +63,13 @@ public class ReminderSettingActivity extends AppCompatActivity {
                     editor.putBoolean("daily_status", true);
                     editor.apply();
                     System.out.println("Daily Status: On");
-//                    checkDailyStatus(daily_status);
+                    alarmReceiverDaily.setRepeatingAlarm(getApplication().getApplicationContext(), AlarmReceiverDaily.TYPE_REPEATING,
+                            "7:00");
                 } else {
                     editor.putBoolean("daily_status", false);
                     editor.apply();
                     System.out.println("Daily Status: Off");
-//                    checkDailyStatus(daily_status);
+                    alarmReceiverDaily.setCancelAlarm(getApplication().getApplicationContext());
                 }
             }
         });
@@ -81,7 +83,6 @@ public class ReminderSettingActivity extends AppCompatActivity {
             System.out.println("Release Status: On");
         } else {
             release_toggle.setChecked(false);
-            alarmReceiverRelease.setCancelAlarm(getApplicationContext());
             System.out.println("Release Status: Off");
         }
     }
@@ -94,7 +95,6 @@ public class ReminderSettingActivity extends AppCompatActivity {
             System.out.println("Daily Status: On");
         } else {
             daily_toggle.setChecked(false);
-            alarmReceiverDaily.setCancelAlarm(getApplicationContext());
             System.out.println("Daily Status: Off");
         }
     }
